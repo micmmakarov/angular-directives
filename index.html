@@ -5,8 +5,13 @@
 	</head>
 	<body ng-app="randomApp" ng-controller="WarehouseCtrl">
 
+		<div>
+			<input type="text" ng-model="catName">
+			<button ng-click="makeCat(catName)">Make this Cat</button>
+		</div>
+
 		<div ng-repeat="cat in cats">
-			<pack-of-beer cat-name="cat" kill-cat="killCat(cat)"></pack-of-beer>
+			<pack-of-beer make-cat="makeCat(name)" cat-name="cat" kill-cat="killCat(cat)"></pack-of-beer>
 		</div>
 
 	</body>
