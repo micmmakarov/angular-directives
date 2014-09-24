@@ -6,7 +6,7 @@
 	<body ng-app="randomApp" ng-controller="WarehouseCtrl">
 
 		<div ng-repeat="cat in cats">
-			<pack-of-beer cat-name="cat"></pack-of-beer>
+			<pack-of-beer cat-name="cat" kill-cat="killCat(cat)"></pack-of-beer>
 		</div>
 
 	</body>
